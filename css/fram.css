@@ -1,0 +1,148 @@
+
+:root{
+    --f-size1:     64px ;
+    --f-w:700;
+    /*  للعناوين  */
+    --f-size2:     40px   ;
+    --f-w: 600;
+    --mb:1.5rem;
+    /*  تجت العناوين p */
+    --f-size3:     15px ;
+    --mt:3rem;
+    --f-size4:     64px ;
+    --section-pt-pb:100px;
+    --text-color:#8492a6 ;
+    --nav-color:#3c4858;
+    --box-shadow:0 10px 33px rgba(0,0,0,0.1);
+    --nav-size-font:11px;
+    --color:#f765a3;
+    --color2:#ffa4b6;
+    --color3:#f9d1d1;
+    --color4:#0b1354;
+    --color5:#165ba9;
+    --color6:#a155b9;
+    --color-w:#FFf;
+    --f-size-hoem:24px;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    overflow-x: hidden;
+}
+.container{
+    margin: auto;
+    padding-left: 15px ;
+    padding-top: var(--section-pt-pb);
+    padding-bottom: var(--section-pt-pb);
+    padding-right: 15px;
+}
+.btn{
+    width: 200px;
+    height: 69px;
+    border: none;
+    background: #f9d1d1;
+    border-radius: 9%;
+    font-weight: bold;
+    color: var(--color);
+    margin-top: 7%;
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.card-title {
+    margin-bottom: 0.5rem !important;
+    font-weight: 500;
+    line-height: 1.2;
+text-align: center;
+}
+.card .img img{
+    width: 100%;
+}
+@media (max-width :767px){
+    /* .container{
+        width: ;
+    } */
+    .sm-text-center{
+        text-align: center;
+
+    }
+    .location .content .box{
+        margin-right: 10px !important;;
+    }
+}
+@media (max-width :500px){
+    .location .content {
+           flex-wrap: wrap;
+    }
+    .location .content .box{
+
+        width: 100% !important;
+    }
+    .location .content .box p{
+        margin-top: 16% !important;;
+    }
+}
+@media (min-width :767px) and (max-width:990px){
+.location .content .box{
+    margin-right: 10px !important;;
+}
+}
+@media (min-width :768px){
+    .container{
+        width:750px ;
+    }
+    .md-text-center{
+        text-align: center;
+
+    }
+
+}
+
+@media (min-width :0px) and (max-width:991px){
+    .home {
+        text-align: center  !important;
+    }
+  
+
+}
+@media (min-width :992px){
+    .container{
+        width:970px ;
+    }
+    .lg-text-center{
+        text-align: center;
+
+    }  
+}
+
+@media (min-width :1200px){
+    .container{
+        width:1170px ;
+    }
+  
+}
+
